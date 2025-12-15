@@ -5,59 +5,69 @@
   text-decoration: none;
   list-style: none;
 }
-body {
-}
 main {
+  margin-top: 70px;
   width: 100%;
+  height: 150vh;
+}
+nav ul li a {
+  color: white;
 }
 header {
   width: 100%;
   height: 70px;
   gap: 20px;
-  background-color: #06103c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   left: 0;
   z-index: 999;
-  position: sticky;
+  position: fixed;
   color: white;
+  background-color: #06103c;
 }
-
-
-
+header h3 {
+  padding-left: 70px;
+}
 nav ul {
+  background-color: #06103c;
   justify-content: center;
   display: flex;
   gap: 40px;
   font-size: 20px;
 }
-
-nav button {
+.btns1 {
+  padding-right: 80px;
   display: flex;
+  justify-content: end;
+  background-color: #06103c;
+}
 
-  padding: 10px 25px;
+.btns1 button {
+  padding: 15px 30px;
   background-color: white;
   color: black;
 }
-nav button:hover {
+.btns1 button:hover {
   background-color: #06103c;
   color: white;
 }
-section h1 {display: flex;
+
+section h1 {
+  display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 130px;
   color: #06103c;
   padding: 40px;
-  
 }
-.left p{
-    font-size: 30px;
-    padding-left:130px;
-
+.p1 {
+  font-size: 30px;
+  padding-left: 130px;
 }
 .right {
-
   margin-left: 900px;
   width: 700px;
   height: 70vh;
