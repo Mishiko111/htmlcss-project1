@@ -54,24 +54,55 @@ nav ul {
   color: white;
 }
 
-section h1 {
+h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 130px;
   color: #06103c;
-  padding: 40px;
 }
 .p1 {
   font-size: 30px;
   padding-left: 130px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.right {
-  margin-left: 900px;
-  width: 700px;
+.p1 p:nth-child(2) {
+  font-size: 20px;
+  width: 50%;
+}
+.sec1 section {
+  padding-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+.sec1 section .left {
+  width: 50%;
+  min-width: 300px;
+  flex-grow: 1;
+}
+.sec1 section .right {
+  flex-grow: 1;
+  min-width: 300px;
+  width: 50%;
   height: 70vh;
   background-size: cover;
   background-position: center;
   background-image: url(https://static.wixstatic.com/media/88aac0_711e9ff68a08459cb5e86a0e4c5ee06a~mv2.png/v1/fill/w_1137,h_900,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/88aac0_711e9ff68a08459cb5e86a0e4c5ee06a~mv2.png);
+}
+@media screen and (max-width:900px)
+{
+  h1{
+    font-size: 70px;
+  }
+}
+@media screen and (max-width:400px)
+{
+  h1{
+    font-size: 20px;
+  }
 }
