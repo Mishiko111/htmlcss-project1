@@ -8,53 +8,8 @@
 
 main {
   margin-top: 70px;
-  width: 100%;
-  height: 100vh;
 }
-nav ul li a {
-  color: white;
-}
-header {
-  width: 100%;
-  height: 70px;
-  gap: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  position: fixed;
-  color: white;
-  background-color: #06103c;
-}
-header h3 {
-  padding-left: 70px;
-}
-nav ul {
-  background-color: #06103c;
-  justify-content: center;
-  display: flex;
-  gap: 40px;
-  font-size: 20px;
-}
-.btns1 {
-  padding-right: 80px;
-  display: flex;
-  justify-content: end;
-  background-color: #06103c;
-}
-
-.btns1 button {
-  padding: 15px 30px;
-  background-color: white;
-  color: black;
-}
-.btns1 button:hover {
-  background-color: #06103c;
-  color: white;
-}
-
+/* #region sec1 */
 h1 {
   display: flex;
   justify-content: center;
@@ -82,6 +37,10 @@ h1 {
   margin-left: 130px;
   color: white;
 }
+.sec1 button:hover {
+  background-color: white;
+  color: #06103c;
+}
 .sec1 section {
   padding-right: 50px;
   display: flex;
@@ -100,7 +59,7 @@ h1 {
   height: 70vh;
   background-size: cover;
   background-position: center;
-  background-image: url(https://static.wixstatic.com/media/88aac0_711e9ff68a08459cb5e86a0e4c5ee06a~mv2.png/v1/fill/w_1137,h_900,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/88aac0_711e9ff68a08459cb5e86a0e4c5ee06a~mv2.png);
+  background-image: url(./templates/photos/firts.avif);
 }
 @media screen and (max-width: 900px) {
   h1 {
@@ -112,54 +71,258 @@ h1 {
     font-size: 20px;
   }
 }
-
-.sec2 section {
+/* #endregion sec1 */
+/* #region sec2 */
+.sec2 {
+  justify-content: center;
+  align-items: center;
   display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.secc {
+  gap: 40px;
+  padding-top: 150px;
+  display: flex;
+  width: 85%;
+  height: 70vh;
+  flex-direction: column;
+}
+.secc h2 {
+  font-size: 60px;
+  font-weight: lighter;
+}
+.secc1 {
   flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+.sec2 .pic {
+  width: 500px;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(./templates/photos/Buying\ a\ House.avif);
+}
+.sec2 .left {
+  flex-grow: 1;
+  display: flex;
+  width: 50%;
+  min-width: 300px;
+}
+.sec2 .right {
+  display: flex;
+  flex-grow: 1;
+  width: 50%;
+  min-width: 300px;
+}
+
+.text p {
+  width: 300px;
   text-align: justify;
-  margin-top: 100px;
-  background-color: red;
+}
+
+.text {
+  padding-top: 40px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.text a {
+  all: unset;
+}
+.text a button {
+  color: white;
+  background-color: #06103c;
+  padding: 15px 35px;
+}
+.text a button:hover {
+  color: #06103c;
+  background-color: white;
+}
+
+/* 
+#endregion sec2 */
+/* #region sec3 */
+
+.sec3 {
+  display: flex;
+  background-color: #c1c3ce;
+  width: 100%;
+  height: 100vh;
+}
+
+.seec {
+  gap: 50px;
+
+  padding-top: 60px;
+  padding-left: 60px;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  flex-direction: column;
+}
+.seec1 {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+}
+.seec1 .left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  min-width: 300px;
+}
+.seec1 .right {
+  padding-right: 60px;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  width: 50%;
+  min-width: 300px;
+}
+.seec h2 {
+  color: #06103c;
+  font-weight: lighter;
+  font-size: 50px;
+}
+.seec1 p {
+  font-size: 20px;
+  max-width: 400px;
+  text-align: justify;
+}
+.seec1 .right .text3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.seec1 .text1 p {
+  height: 10vh;
+}
+
+.seec1 .text2 p {
+  height: 10vh;
+}
+
+.seec1 .right .quote {
+  text-align: justify;
+  max-width: 400px;
+}
+/* #endregion sec3 */
+
+.sec4 {
+  
+  background-color: #c1c3ce;
+  width: 100%;
   height: 120vh;
 }
-
-.sec2 section h2 {
-  padding-left: 70px;
+.secc3 {
+  padding-top: 50px;
 }
-.sec2 section .left {
-  min-width: 300px;
-  width: 50%;
+.secc3 h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  padding-left: 80px;
 }
-.sec2 section .left {
+.boxs {
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 80px;
   display: flex;
-  flex-grow: 1;
-  width: 100px;
+  justify-content: space-between;
+}
+
+.box1 .pic1 {
+  background-image: url(./templates/photos/1.avif);
+  background-position: center;
   height: 50vh;
-  margin-top: 100px;
+  background-size: cover;
+  width: 300px;
+}
+
+.box2 .pic2 {
+  background-image: url(./templates/photos/2.png);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+
+  width: 300px;
+}
+.box3 .pic3 {
+  background-image: url(./templates/photos/3.avif);
+  background-position: center;
+  height: 50vh;
+  background-size: cover;
+  width: 300px;
+}
+.caption1 {
+  padding: 15px 10px;
+}
+.caption1 h2 {
+  padding: 5px;
+  font-size: 30px;
+}
+
+.caption1 p {
+  padding: 10px;
+  text-align: justify;
+  font-size: 20px;
+  width: 300px;
+}
+.caption1 {
+  padding: 15px 10px;
+}
+.caption1 h2 {
+  padding: 5px;
+  font-size: 30px;
+}
+
+.caption2 {
+  padding: 15px 10px;
+}
+.caption2 p {
+  padding: 15px;
+  text-align: justify;
+  font-size: 20px;
+  width: 300px;
+}
+.caption2 h2 {
+  padding: 5px;
+  font-size: 30px;
+}
+.caption3 {
+  padding: 15px 10px;
+}
+.caption3 h2 {
+  padding: 5px;
+  font-size: 30px;
+}
+.caption3 p {
+  padding: 15px;
+  text-align: justify;
+  font-size: 20px;
+  width: 300px;
+}
+.box1,
+.box2,
+.box3 {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* #region sec5 */
+.sec5 {
   background-size: cover;
   background-position: center;
-  background-image: url(https://static.wixstatic.com/media/11062b_6d8663bf463849c9a67f654f9938cd92~mv2.jpg/v1/fill/w_1140,h_810,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Buying%20a%20House.jpg);
+  height: 100vh;
+  width: 100%;
+  background-image: url(./templates/photos/last.avif);
 }
-.sec2 section .right {
-  display: flex;
-  width: 50%;
-  min-width: 300px;
-  flex-grow: 1;
-}
-.sec2 section .right p {
-  margin: 200px;
-  display: flex;
-  text-align: right;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  font-size: 20px;
-}
-
-.sec2 section .right button {
-  margin-top: px;
-  display: flex;
-  align-items: center;
-  height: 20px;
-  padding: 20px;
-  justify-content: center;
-}
+/* #endregion sec5 */
