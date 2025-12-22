@@ -124,4 +124,44 @@ footer {
 .info1 a{
   all: unset;
 }
+@media (max-width: 1200px) {
+  .parent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .div1, .div2, .div3, .div4, .div5 {
+    grid-area: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .ftext1, .info1, .info2 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .div5 {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .h22 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h22 {
+    font-size: 20px;
+  }
+  .ftext1, .info1, .info2 {
+    font-size: 16px;
+  }
+  .div5 i {
+    font-size: 24px;
+  }
+}
+
 /* #endregion footer */
