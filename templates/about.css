@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sec1 {
+  flex-wrap: wrap;
+  display: flex;
+  min-height: 100vh;
+}
+.sec1 .left {
+  min-width: 300px;
+  padding-top: 100px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 .left img {
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+.sec1 .right {
+  min-width: 300px;
+  width: 50%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec1 .right h1 {
+  font-size: 48px;
+  color: #0a1a44;
+  margin-bottom: 20px;
+}
+.sec1 .right h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sec1 .right p {
+  text-align: justify;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+@media (max-width: 992px) {
+  .sec1 {
+    flex-direction: column;
+  }
+  .sec1 .left,
+  .sec1 .right {
+    width: 100%;
+  }
+  .sec1 .left {
+    padding-top: 100px;
+  }
+  .sec1 .left img {
+    max-width: 90%;
+    height: auto;
+  }
+  .sec1 .right {
+    padding: 40px;
+    text-align: center;
+  }
+  .sec1 .right p {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=about.css.map */
