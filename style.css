@@ -17,6 +17,7 @@ h1 {
   font-weight: bold;
   font-size: 130px;
   color: #06103c;
+  text-align: center;
 }
 .p1 {
   font-size: 30px;
@@ -29,6 +30,7 @@ h1 {
 .p1 p:nth-child(2) {
   font-size: 20px;
   width: 70%;
+  flex-wrap: wrap;
 }
 .sec1 button {
   background-color: #06103c;
@@ -42,6 +44,7 @@ h1 {
   color: #06103c;
 }
 .sec1 section {
+  gap: 20px;
   padding-right: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -55,22 +58,28 @@ h1 {
 .sec1 section .right {
   flex-grow: 1;
   min-width: 300px;
-  width: 50%;
+  width: 45%;
   height: 70vh;
   background-size: cover;
   background-position: center;
   background-image: url(./templates/photos/firts.avif);
 }
+
+@media screen and(max-width:1200px) {
+  .p1 p:nth-child(1) {
+    padding-right: 50px;
+  }
+}
 @media screen and (max-width: 900px) {
   h1 {
-    font-size: 70px;
+    font-size: 60px;
+  }
+  .p1 {
+    flex-wrap: wrap;
+    height: auto;
   }
 }
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 20px;
-  }
-}
+
 /* #endregion sec1 */
 /* #region sec2 */
 .sec2 {
@@ -251,7 +260,7 @@ h1 {
 .seec1 .right .text3 {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: start;
   gap: 12px;
 }
 
@@ -264,7 +273,7 @@ h1 {
 }
 
 .seec1 .right .quote {
-  text-align: justify;
+  text-align: start;
   max-width: 400px;
 }
 @media (max-width: 800px) {
@@ -293,7 +302,7 @@ h1 {
 
   .seec1 .right {
     padding-right: 0;
-    justify-content: center;
+    justify-content: start;
   }
 
   .seec1 p {
@@ -302,12 +311,11 @@ h1 {
   }
 
   .seec1 .right .text3 {
-    align-items: center;
-    text-align: center;
+    align-items: start;
   }
 
   .seec1 .right .quote {
-    text-align: center;
+    text-align: start;
   }
 }
 @media (max-width: 576px) {
@@ -330,10 +338,9 @@ h1 {
 
 /* #endregion sec3 */
 
- /* #region sec4 */
+/* #region sec4 */
 .sec4 {
-  
- background-color: #c1c3ce;
+  background-color: #c1c3ce;
   width: 100%;
   min-height: 120vh;
 }

@@ -44,3 +44,46 @@ main {
   font-size: 18px;
   line-height: 1.6;
 }
+@media screen and (max-width: 1200px) {
+  .text-section h1 {
+    font-size: 70px;
+  }
+  .paragraph h2 {
+    font-size: 24px;
+  }
+  .paragraph p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-section h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .paragraph h2 {
+    font-size: 22px;
+  }
+  .paragraph p {
+    font-size: 15px;
+  }
+  .paragraph {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .paragraph h2 {
+    font-size: 20px;
+  }
+  .paragraph p {
+    font-size: 14px;
+  }
+  .paragraph {
+    padding: 0 10px;
+  }
+}
