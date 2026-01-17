@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+body {
+  background-color: #fff;
+  color: #06103c;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+form {
+  text-align: left;
+}
+
+.field {
+  margin-bottom: 40px;
+}
+
+label {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #06103c;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background-color: #06103c;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .contact h1 {
+    font-size: 48px;
+  }
+
+  .contact p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    margin: 40px auto;
+  }
+
+  .contact h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+
+  .contact p {
+    font-size: 14px;
+  }
+
+  .field {
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
