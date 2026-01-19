@@ -7,9 +7,12 @@
 body {
   margin-top: 50px;
   width: 100%;
-  font-family: "Georgia", serif;
+
   color: #06103c;
   background-color: #ffffff;
+}
+main {
+  margin-bottom: 80px;
 }
 
 .top-info {
@@ -42,7 +45,6 @@ body {
 }
 
 .content {
- 
   align-items: center;
   max-width: 1000px;
   margin: 20px auto;
@@ -50,7 +52,7 @@ body {
 }
 
 .content h1 {
-  font-size: 80px;
+  font-size: 90px;
   line-height: 1;
   letter-spacing: 2px;
   margin-bottom: 40px;

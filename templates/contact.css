@@ -38,7 +38,6 @@ form {
 }
 
 label {
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -47,7 +46,6 @@ label {
   margin-bottom: 10px;
   white-space: nowrap;
 }
-
 
 input,
 textarea {
