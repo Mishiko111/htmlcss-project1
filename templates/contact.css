@@ -36,15 +36,15 @@ form {
 .field {
   margin-bottom: 40px;
 }
-
+.field1 {
+  margin-bottom: 40px;
+}
 label {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 4px;
   font-size: 14px;
   margin-bottom: 10px;
-  white-space: nowrap;
 }
 
 input,

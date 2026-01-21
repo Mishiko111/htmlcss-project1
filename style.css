@@ -5,7 +5,9 @@
   text-decoration: none;
   list-style: none;
 }
-
+html{
+  overflow-x: hidden;
+}
 main {
   margin-top: 70px;
 }
